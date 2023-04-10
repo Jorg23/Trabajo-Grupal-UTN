@@ -15,10 +15,9 @@ header{
     top: 0px;
     border-radius: 0px;
     clear: both;
-    content: '';
-    display: table;
+    display: flex;
+    justify-content: space-between;
 }
-
 .logo{
     padding-top: 20px;
     margin: 10px 10px;
@@ -40,53 +39,90 @@ nav ul li {
     list-style: none;
     margin-left: 75px;
     float: right;
-    padding: 25px 0;
-    
+    padding: 6% 0;
 }
 nav ul li a:hover{
     color: hotpink;
     text-shadow:0 0 50px hotpink ;
     text-decoration:dashed;
 }
-
 .container-items{
 padding: 20px;
 margin: 15px;
-display: inline-block;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+height: 700px;
 
 }
+.item{
+width: 45%;
+height: 50%;
+background-color: grey;
+border-radius: 20px;
+margin-bottom: 1%;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.678);
+}
+.itemimg:hover {
+    height: 100%;
+    object-fit: scale-down;
+    z-index: 2;
+  }
+  
+  .itemimg {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    position: relative; /* agregar posicionamiento relativo para que z-index funcione */
+  }
 
-
+  .itemimgback {
+    filter: grayscale();
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    width: 100%;
+    z-index: 0;
+    height: 100%;
+    object-fit: cover;
+    position: absolute; /* agregar posicionamiento absoluto para que z-index funcione */
+    top: 0; /* posicionar la imagen en escala de grises en la parte superior izquierda */
+    left: 0;
+  }
+  
+  figure {
+    height: 80%;
+    display: flex;
+    position: relative; /* agregar posicionamiento relativo para que z-index funcione */
+}
+.info-producto{
+display: flex;
+margin-top: 2%;
+justify-content: space-between;
+padding-left: 10%;
+padding-right: 10%;
+}
 .Pixl{
 width: 355px;
 height: 250px;
-
 }
 h2{
 color: #1E1E1E;
-
 }
-
 .footer{
 color: #1E1E1E;
 display: flex;
 justify-content: center;
-
 }
 h3{
 color: #1E1E1E;
-
-
 }
-
 .detalle-integrante{
 color: #1E1E1E;
-
-
-
 }
 button{
   background-color: rgb(24, 21, 22);
- 
 }
 
