@@ -4,7 +4,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color: whitesmoke;
     text-decoration: none;
 }
 header{
@@ -16,6 +15,7 @@ header{
     border-radius: 0px;
     clear: both;
     display: flex;
+
     justify-content: space-between;
 }
 .logo{
@@ -32,6 +32,7 @@ nav ul li a{
     float: right;
     margin-right: 50%;
     cursor: pointer;
+    color: whitesmoke;
     transition: text-shadow 0.2s ease-in-out;
 }
 nav ul li {
@@ -47,27 +48,27 @@ nav ul li a:hover{
     text-decoration:dashed;
 }
 .container-items{
-padding: 20px;
-margin: 15px;
-display: flex;
-justify-content: space-between;
-flex-wrap: wrap;
-height: 700px;
-
+    padding: 10px;
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 700px;
+    padding-bottom: 45px;
 }
 .item{
-width: 45%;
-height: 50%;
-background-color: grey;
-border-radius: 20px;
-margin-bottom: 1%;
-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.678);
+    width: 45%;
+    height: 50%;
+    background-color: grey;
+    border-radius: 20px;
+    margin-bottom: 2%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.678);
 }
-.itemimg:hover {
+.item:hover .itemimg{
     height: 100%;
     object-fit: scale-down;
     z-index: 2;
-  }
+}
   
   .itemimg {
     border-top-right-radius: 20px;
@@ -77,9 +78,8 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.678);
     object-fit: cover;
     z-index: 1;
     position: relative; /* agregar posicionamiento relativo para que z-index funcione */
-  }
-
-  .itemimgback {
+}
+.itemimgback {
     filter: grayscale();
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
@@ -90,39 +90,89 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.678);
     position: absolute; /* agregar posicionamiento absoluto para que z-index funcione */
     top: 0; /* posicionar la imagen en escala de grises en la parte superior izquierda */
     left: 0;
-  }
-  
-  figure {
+}
+.item:hover{
+    transform:scale(1.04);
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.644);
+}
+figure {
     height: 80%;
     display: flex;
     position: relative; /* agregar posicionamiento relativo para que z-index funcione */
 }
-.info-producto{
-display: flex;
-margin-top: 2%;
-justify-content: space-between;
-padding-left: 10%;
-padding-right: 10%;
+.info-producto {
+    display: -webkit-box; /* Se usa el prefijo -webkit- para compatibilidad */
+    -webkit-line-clamp: 2; /* El texto se divide en dos líneas como máximo */
+    -webkit-box-orient: vertical; /* El texto se muestra en vertical */
+    overflow: hidden; /* Se recorta el contenido que se desborda */
+    margin-top: 2%;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+}
+.addtocart-min{
+    display: none;
+}
+.info-producto button{
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 100%;
+}
+.nameproduct {
+    display: none;
+    width: 70%; /* Especifica una anchura para el elemento de texto */
+    display: -webkit-box; /* Se usa el prefijo -webkit- para compatibilidad */
+    -webkit-line-clamp: 2; /* El texto se divide en dos líneas como máximo */
+    -webkit-box-orient: vertical; /* El texto se muestra en vertical */
+    overflow: hidden; /* Se recorta el contenido que se desborda */
+    color: black;
+    margin-top: %;
 }
 .Pixl{
-width: 355px;
-height: 250px;
+    width: 355px;
+    height: 250px;
 }
-h2{
-color: #1E1E1E;
-}
-.footer{
-color: #1E1E1E;
-display: flex;
-justify-content: center;
-}
-h3{
-color: #1E1E1E;
-}
-.detalle-integrante{
-color: #1E1E1E;
-}
-button{
-  background-color: rgb(24, 21, 22);
+footer{
+    color: #1E1E1E;
+    display: flex;
+    justify-content: center;
 }
 
+/* RESPONSIVE */
+
+@media (max-width: 490px) {
+    .container-items {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        height: 700px;
+    }
+    .item{
+        width: 100%;
+        height: 150px;
+    }
+    .info-producto{
+        font-size: 10px;
+        padding-right: 0px;
+        margin-top: 0px;
+    }
+    .addtocart-min{
+        display: inline-block;
+        color: black;
+        font-size: 200%;
+    }    
+    .addtocart-max{
+    display: none;    
+    }
+    .info-producto button{
+        border-bottom-right-radius: 12px;
+        height: 30px;
+        width: 50px;
+        font-size: 200%;
+        background-color: black;
+    }
+    .nameproduct{
+        margin-top: 1.4%;
+    }
+}

@@ -16,3 +16,4 @@
       <a href="https://github.com/Jorg23/Trabajo-Grupal-UTN"> <del>Click aqui para ver el Prototipo MOVIL en Figma</del></a> <span><u>NO DISPONIBLE</u></span>
     </li>
     </ul>
+{}
