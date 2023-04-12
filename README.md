@@ -22,6 +22,8 @@
     Notas de la Version:
     🫡Agregamos la seccion "Home" y esta en fase de experimentacion junto a su Responsive.
     🫡Arreglamos el titulo de seccion
+    🫡Primeros archivos de paginas extras de "Contactanos" by <a href="https://github.com/Jorg23/Trabajo-Grupal-UTN/commits?author=nicosurano">Nico Surano</a>
+
     🫡Agregamos efecto Scroll
     🫡Recordamos utilizacion de VW y VH para responsive en textos
     🫡Enlazamos el boton que aun falta CSS
