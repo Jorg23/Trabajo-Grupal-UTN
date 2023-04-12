@@ -19,16 +19,14 @@
     <hr>
     <h2>Version de la Pagina: Version 2.2</h2>
     
-    <p>
-    Notas de la Version:
+    - Notas de la Version:
+    
     🫡Agregamos la seccion "Home" y esta en fase de experimentacion junto a su Responsive.
     🫡Arreglamos el titulo de seccion
-    🫡Primeros archivos de paginas extras de "Contactanos" by <a href="https://github.com/Jorg23/Trabajo-Grupal-UTN/commits?author=nicosurano">Nico Surano</a>
-
+    🫡Primeros archivos de paginas extras de "Contactanos" by @nicosurano
     🫡Agregamos efecto Scroll
     🫡Recordamos utilizacion de VW y VH para responsive en textos
     🫡Enlazamos el boton que aun falta CSS
     🫥Falta: Onclick en Carrito y buscar soluciones a la ubicacion de precios
     😜Proximo: Reorganizar y enlazar el Nav con secciones y pags externas
     😜Proximo: Establecer el logo y comenzar la seccion "Nosotros"
-    </p>
