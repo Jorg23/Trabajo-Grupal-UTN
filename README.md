@@ -16,4 +16,15 @@
       <a href="https://github.com/Jorg23/Trabajo-Grupal-UTN"> <del>Click aqui para ver el Prototipo MOVIL en Figma</del></a> <span><u>NO DISPONIBLE</u></span>
     </li>
     </ul>
-{}
+    <hr>
+    <h2>Version de la Pagina: Version 2.2</h2>
+    
+    Notas de la Version:
+    🫡Agregamos la seccion "Home" y esta en fase de experimentacion junto a su Responsive.
+    🫡Arreglamos el titulo de seccion
+    🫡Agregamos efecto Scroll
+    🫡Recordamos utilizacion de VW y VH para responsive en textos
+    🫡Enlazamos el boton que aun falta CSS
+    🫥Falta: Onclick en Carrito y buscar soluciones a la ubicacion de precios
+    😜Proximo: Reorganizar y enlazar el Nav con secciones y pags externas
+    😜Proximo: Establecer el logo y comenzar la seccion "Nosotros"
