@@ -19,7 +19,7 @@
     <hr>
     <h2>Version de la Pagina: Version 2.2</h2>
     
-    <span>
+    <p>
     Notas de la Version:
     🫡Agregamos la seccion "Home" y esta en fase de experimentacion junto a su Responsive.
     🫡Arreglamos el titulo de seccion
@@ -31,4 +31,4 @@
     🫥Falta: Onclick en Carrito y buscar soluciones a la ubicacion de precios
     😜Proximo: Reorganizar y enlazar el Nav con secciones y pags externas
     😜Proximo: Establecer el logo y comenzar la seccion "Nosotros"
-    </span>
+    </p>
