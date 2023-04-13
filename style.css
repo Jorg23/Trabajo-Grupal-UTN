@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fjalla+One&display=swap');
+
 html{
     scroll-behavior: smooth;
 }
@@ -22,45 +24,62 @@ header{
 
     justify-content: space-between;
 }
-.logo{
-    padding-top: 20px;
-    margin: 10px 10px;
-    font-size: 135%;
-    float: left;
-    color: whitesmoke;
+header img{
+    padding-top: 10px;
+    padding-left: 20px;
+    height: 120px;
 }
-.logo:hover{
+.textlogo{
+    color: white;
+    font-family: 'Anton', sans-serif;
+    position: absolute;
+    font-size: 5vw;
+    line-height: 150px;
+    padding-left: 15px;
+}
+.logo:hover {
     transform: scale(1.05);
 }
 nav ul li a{
-    font-size: 25px;
+    font-size: 40px;
     float: right;
-    margin-right: 50%;
+    margin-right: 3vh;
     cursor: pointer;
     color: whitesmoke;
     transition: text-shadow 0.2s ease-in-out;
 }
 nav ul li {
     position: relative;
+    padding-top: 50px;
     list-style: none;
-    margin-left: 75px;
+    margin-left: calc(8vw - 50px);
     float: right;
-    padding: 6% 0;
 }
 nav ul li a:hover{
     color: hotpink;
-    text-shadow:0 0 50px hotpink ;
+    text-shadow:0 0 50px hotpink;
     text-decoration:dashed;
 }
-
+#check, .checkbtn{
+    display: none;
+    color: white;
+    float: right;
+    font-size: 70px;
+    line-height: 160px;
+    cursor: pointer;
+}
+.checkbtn:hover{
+    color: hotpink;
+    text-shadow:0 0 15px hotpink;
+}
 /*HOME*/
 main {
     position: relative;
     height: 100%;
     width: 100%;
-  }
+}
 .background {
-    height: 85vh;
+    height: calc(100vh - 140px);
     width: 100%;
     object-fit: cover;
     position: relative;
@@ -70,7 +89,7 @@ main {
     position: absolute;
     z-index: 1;
     left: 3%;
-    font-size: 7vw;
+    font-size: 7vw ;
     top: 15%
 }
 .startnow{
@@ -82,9 +101,9 @@ main {
 }
 /*DESTACADOS*/
 #seccionname{
-    margin-top: 2vw;
-    margin-bottom: 2vw;
-    font-size: 10vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    font-size: 5vw;
     text-align: center;
 }
 .container-items{
@@ -229,13 +248,82 @@ footer{
 
 /* -----------------------RESPONSIVE------------------------------ */
 
-@media (max-width: 440px) {
+/* GRAN TAMAÑO DE SCREEN */
+@media (max-width: 1190px) {
+    .textlogo{
+        display: none;
+    }
+    .checkbtn, .check{
+        display: inline;
+    }
+    nav ul{
+        right: -100%;
+        position: absolute;
+        top: 15vh;
+        z-index: 2;
+        background-color: #1E1E1E;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        width: 185px;
+        padding-bottom: 20px;
+    }
+    nav ul li a{
+        font-size: 40px;
+    }
+    .starterul{
+        margin-top: 0px;
+        padding-top: 0px;
 
+    }
+    #check:checked ~ ul{
+        right: 0.1vw;
+    }
+
+}
+
+/* PANTALLA PEQUEÑA */
+@media (max-width: 440px) {
+/* HEADER */
+    header{
+        height: 70px;
+    }
+    .background{
+        height: calc(100vh - 70px);
+    }
+    header img{
+        margin-left: 0px;
+        height: 50px;
+    }
+    .checkbtn{
+        margin-right: 10px;
+        font-size: 50px;
+        line-height: 85px;
+    }
+    nav ul{
+        right: -100%;
+        position: absolute;
+        top: 9vh;
+        z-index: 2;
+        background-color: #1E1E1E;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        width: 110px;
+        padding-bottom: 20px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    .starterul{
+        margin-top: 10px;
+        padding-top: 0px;
+    }
 /* DESTACADOS */
     .container-items {
         flex-wrap: nowrap;
         flex-direction: column;
-        height: 700px;
+        height: 670px;
     }
     .item{
         width: 100%;
@@ -273,7 +361,12 @@ footer{
         height: 80%;
         font-size: 20px;
     }
+    #seccionname{
+        font-size: 8vw;
+        text-align: center;
+    }
 /* HOME */
     #welcome{
         font-size: 50px;
     }
+}

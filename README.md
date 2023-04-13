@@ -17,9 +17,20 @@
     </li>
     </ul>
     <hr>
-    <h2>Version de la Pagina: Version 2.2</h2>
+    <h2>Version de la Pagina: Version 2.8</h2>
     
-    - Notas de la Version:
+    🫡Ya contamos con el HEADER Responsive y esta en fase de QA
+    🫡Agregamos JS para el autoexit del menu
+    🫡Añadimos el Logo y todos los Hovers aparentes
+    🫡Reajustamos diversos sizes
+    🫡Recordamos agregar el css y JavaScript aclarados en el code con HEADER
+    🫥Falta: Onclick en Carrito y buscar soluciones a la ubicacion de precios
+    🫥Falta: Enlazar todas las secciones y chequear estas por sectores
+    😜Proximo: comenzar a trabajar en Footer
+
+    <hr>
+    
+    📌 Notas de Version Anterior (Seccion Home V2.2):
     
     🫡Agregamos la seccion "Home" y esta en fase de experimentacion junto a su Responsive.
     🫡Arreglamos el titulo de seccion
