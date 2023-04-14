@@ -30,7 +30,6 @@
     🫡Organizamos correctamente tanto HTML como CSS dentro de respectivas carpetas, Cuidado con los vinculos hechos previamente.
     🫡Reparamos el menu del header para que en responsive no se superponga o corra hacia la derecha.
     🫡Agregamos "Contactanos" y lo vinculamos
-@@ -29,9 +41,7 @@
     🫥buscar soluciones a la ubicacion de precios
     🫥Falta: Enlazar y agregar las secciones de "Galeria" y "Nosotros"
     😜Proximo: trabajar en html y Css de "Galeria"
