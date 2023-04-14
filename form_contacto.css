@@ -1,70 +1,92 @@
 @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fjalla+One&display=swap');
 *{
-    font-family:VT323;
+    font-family:VT323 ;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: whitesmoke;
     color: black;
 }
+
 header{
     background-color: #1E1E1E;
     width: 100%;
-    height: 103px;
+    height: 140px;
     left: 0px;
     top: 0px;
     border-radius: 0px;
     clear: both;
     display: flex;
-
     justify-content: space-between;
 }
-.logo{
-    color: white;
-    background-color: #1E1E1E;
-    padding-top: 20px;
-    margin: 10px 10px;
-    font-size: 35px;
-    float: left;
+header img{
+    padding-top: 10px;
+    padding-left: 20px;
+    height: 120px;
 }
-.logo:hover{
+.logo{
+    display: flex;
+}
+.textlogo{
+    color: white;
+    font-family: 'Anton', sans-serif;
+    font-size:3rem;
+    line-height: 150px;
+    padding-left: 15px;
+    cursor:default;
+}
+.logo:hover {
     transform: scale(1.05);
 }
 nav ul li a{
-    background-color: #1E1E1E;
-    font-size: 25px;
+    font-size: 40px;
     float: right;
-    margin-right: 50%;
+    margin-right: 3vh;
     cursor: pointer;
     color: whitesmoke;
     transition: text-shadow 0.2s ease-in-out;
 }
 nav ul li {
-    background-color: #1E1E1E;
     position: relative;
+    padding-top: 50px;
     list-style: none;
-    margin-left: 75px;
+    margin-left: calc(8vw - 50px);
     float: right;
-    padding: 6% 0;
 }
 nav ul li a:hover{
     color: hotpink;
-    text-shadow:0 0 50px hotpink ;
+    text-shadow:0 0 50px hotpink;
     text-decoration:dashed;
+}
+#check, .checkbtn{
+    display: none;
+    color: white;
+    float: right;
+    font-size: 70px;
+    line-height: 160px;
+    cursor: pointer;
+}
+.checkbtn:hover{
+    color: hotpink;
+    text-shadow:0 0 15px hotpink;
 }
 
 .container{
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items:center;
+    justify-content:center;
     gap: 2.5rem;
-    
 }
 .container h3{
     font-size: 4.5rem;
@@ -72,14 +94,14 @@ nav ul li a:hover{
 }
 
 .section_inputs{
-    display: flex;
+    display:flex;
     justify-content: space-between;
     gap: 5rem;
     width: 100%;
 }
 
 form{
-    display: flex;
+    display:flex;
     flex-direction: column;
     align-items: stretch;
     gap: 20px;
@@ -129,7 +151,6 @@ label textarea:hover{
 .checkbox-label input[type="checkbox"]{
     width: 15px;
 }
-
 .checkbox-label span{
     font-weight: 400;
 }
@@ -153,4 +174,105 @@ label textarea:hover{
 }
 .submit-btn:focus{
     color: hotpink;
+}
+
+@media (max-width: 1190px) {
+    .textlogo{
+        display: none;
+    }
+    .checkbtn, .check{
+        display: inline;
+    }
+    nav ul{
+        right: -100%;
+        position: absolute;
+        top: 15vh;
+        z-index: 2;
+        background-color: #1E1E1E;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        width: 185px;
+        padding-bottom: 20px;
+    }
+    nav ul li a{
+        font-size: 40px;
+    }
+    .starterul{
+        margin-top: 0px;
+        padding-top: 0px;
+
+    }
+    #check:checked ~ ul{
+        right: 0.1vw;
+    }
+
+}
+
+
+@media (max-width: 440px){
+
+    header{
+        height: 70px;
+    }
+    .background{
+        height: calc(100vh - 70px);
+    }
+    header img{
+        margin-left: 0px;
+        height: 50px;
+    }
+    .checkbtn{
+        margin-right: 10px;
+        font-size: 50px;
+        line-height: 85px;
+    }
+    nav ul{
+        right: -100%;
+        position: absolute;
+        top: 9vh;
+        z-index: 2;
+        background-color: #1E1E1E;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        width: 110px;
+        padding-bottom: 20px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    .starterul{
+        margin-top: 10px;
+        padding-top: 0px;
+    }
+
+    .container h3{
+        font-size: 3rem;
+        font-weight: 400;
+    }
+
+    form{
+        gap: 5px;
+    }
+
+    .section_inputs{
+        display:block;
+    }
+    .section_inputs label input{
+        width: 100%;
+        font-size: 16pt;
+    }
+
+    label textarea{
+        font-size: 16pt;
+    }
+    
+    .checkbox-label{
+        padding-top: 1rem;
+    }
+
+    .submit-btn{
+        font-size: 16pt;
+    }
 }
