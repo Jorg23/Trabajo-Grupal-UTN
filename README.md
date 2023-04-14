@@ -17,8 +17,22 @@
     </li>
     </ul>
     <hr>
-    <h2>Actualizacion actual de la Pagina: "El Header": Version 2.8</h2>
+    <h2>Actualizacion actual de la Pagina: "Reorganizacion interna": Version 3</h2>
     
+    🫡Reparamos el menu del header para que en responsive no se superponga o corra hacia la derecha.
+    🫡Agregamos "Contactanos" y lo vinculamos
+    🫡Agregamos Footer
+    🫡Reajustamos sizes de home para dejar un vh total de seccion destacados
+    🫡Recordamos agregar el css ACTUALIZADO y JavaScript aclarados en el code con HEADER
+    🫡Agregamos onclick en carrito
+    🫥buscar soluciones a la ubicacion de precios
+    🫥Falta: Enlazar y agregar las secciones de "Galeria" y "Nosotros"
+    😜Proximo: trabajar en html y Css de "Galeria"
+
+----------------------------------------------------------------------------------
+
+    📌 Notas de Version Anterior (Seccion "El Header" V2.8):
+
     🫡Ya contamos con el HEADER Responsive y esta en fase de QA
     🫡Agregamos JS para el autoexit del menu
     🫡Añadimos el Logo y todos los Hovers aparentes
@@ -27,7 +41,7 @@
     🫥Falta: Onclick en Carrito y buscar soluciones a la ubicacion de precios
     🫥Falta: Enlazar todas las secciones y chequear estas por sectores
     😜Proximo: comenzar a trabajar en Footer
-----------------------------------------------------------------------------------
+    
     📌 Notas de Version Anterior (Seccion Home V2.2):
     
     🫡Agregamos la seccion "Home" y esta en fase de experimentacion junto a su Responsive.
