@@ -19,6 +19,7 @@
     <hr>
     <h2>Actualizacion actual de la Pagina: "Reorganizacion interna": Version 3</h2>
     
+    🫡Organizamos correctamente tanto HTML como CSS dentro de respectivas carpetas, Cuidado con los vinculos hechos previamente.
     🫡Reparamos el menu del header para que en responsive no se superponga o corra hacia la derecha.
     🫡Agregamos "Contactanos" y lo vinculamos
     🫡Agregamos Footer
