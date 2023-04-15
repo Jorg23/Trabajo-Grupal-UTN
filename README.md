@@ -26,15 +26,12 @@
 
     📌 Notas de Version Anterior (Seccion "Reorganizacion Interna" V3):
 
-
     🫡Organizamos correctamente tanto HTML como CSS dentro de respectivas carpetas, Cuidado con los vinculos hechos previamente.
     🫡Reparamos el menu del header para que en responsive no se superponga o corra hacia la derecha.
     🫡Agregamos "Contactanos" y lo vinculamos
     🫥buscar soluciones a la ubicacion de precios
     🫥Falta: Enlazar y agregar las secciones de "Galeria" y "Nosotros"
     😜Proximo: trabajar en html y Css de "Galeria"
-
-----------------------------------------------------------------------------------
 
 
     📌 Notas de Version Anterior (Seccion "El Header" V2.8):
@@ -48,6 +45,7 @@
     🫥Falta: Enlazar todas las secciones y chequear estas por sectores
     😜Proximo: comenzar a trabajar en Footer
     
+
     📌 Notas de Version Anterior (Seccion Home V2.2):
     
     🫡Agregamos la seccion "Home" y esta en fase de experimentacion junto a su Responsive.
