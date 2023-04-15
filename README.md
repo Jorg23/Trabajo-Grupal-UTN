@@ -17,14 +17,24 @@
     </li>
     </ul>
     <hr>
-    <h2>Actualizacion actual de la Pagina: "Pagina Online": Version 5</h2>
+    <h2>Actualizacion actual de la Pagina: "Anclajes Completos": Version 7</h2>
+    
+    🫡Recordamos para proximos proyectos hacer CSS'S de HEADER y FOOTER separados
+    🫡Solucionamos CSS de nuevas paginas
+    🫡Agregamos "Nosotros" y "Galeria": lo vinculamos y añadimos header
+    🫥buscar soluciones a la ubicacion de precios
+    😣Bug encontrado en el que "Galeria" no muestra menu en moviles
+    😜Proximo: JS a seccion contactanos
+
+----------------------------------------------------------------------------------
+
+    📌Notas de la Version Anterior (Seccion "Pagina Online" V.5)
 
     🫡¡Ya puedes ver la pagina en vivo en el link ubicado en "Pagina Web en vivo" que se encuentra mas arriba!
     🫡Con esta actualizacion estamos casi listos para enviar la web a correccion luego de terminar de vincular
 
-----------------------------------------------------------------------------------
 
-    📌 Notas de Version Anterior (Seccion "Reorganizacion Interna" V3):
+    📌 Notas de Version Anterior (Seccion "Reorganizacion Interna" V.3):
 
     🫡Organizamos correctamente tanto HTML como CSS dentro de respectivas carpetas, Cuidado con los vinculos hechos previamente.
     🫡Reparamos el menu del header para que en responsive no se superponga o corra hacia la derecha.

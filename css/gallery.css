@@ -1,5 +1,6 @@
 
 /*estilos de la galeria*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fjalla+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 html{
     scroll-behavior: smooth;
@@ -16,7 +17,64 @@ html{
     font-size: 50px;
     
     }
-    
+    /* HEADER */
+header{
+    background-color: #1E1E1E;
+    width: 100%;
+    height: 140px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+    clear: both;
+    display: flex;
+    justify-content: space-between;
+}
+header img{
+    padding-top: 10px;
+    padding-left: 20px;
+    height: 120px;
+    transform: none;
+}
+.textlogo{
+    color: white;
+    font-family: 'Anton', sans-serif;
+    position: absolute;
+    font-size: 5vw;
+    line-height: 150px;
+    padding-left: 15px;
+}
+nav ul li a{
+    font-size: 40px;
+    float: right;
+    margin-right: 3vh;
+    cursor: pointer;
+    color: whitesmoke;
+    transition: text-shadow 0.2s ease-in-out;
+}
+nav ul li {
+    position: relative;
+    padding-top: 30px;
+    list-style: none;
+    margin-left: calc(8vw - 50px);
+    float: right;
+}
+nav ul li a:hover{
+    color: hotpink;
+    text-shadow:0 0 50px hotpink;
+    text-decoration:dashed;
+}
+#check, .checkbtn{
+    display: none;
+    color: white;
+    float: right;
+    font-size: 70px;
+    line-height: 160px;
+    cursor: pointer;
+}
+.checkbtn:hover{
+    color: hotpink;
+    text-shadow:0 0 15px hotpink;
+}
     /*estilo de la galeria*/
     
     .gallery-container {
@@ -105,14 +163,86 @@ html{
     }
 
   /*Zoom en las imagenes*/ 
-img{
+.gallery-img{
     margin: auto;
     cursor: pointer;
     transition: 4s;
 }  
   
-img:hover{
+.gallery-img:hover{
     transform: scale(1.2);
     transition: 4s;
-    
 }
+
+/* -----------------------RESPONSIVE------------------------------ */
+
+/* GRAN TAMAÑO DE SCREEN */
+@media (max-width: 1190px) {
+    /* HEADER */
+    .checkbtn, .check{
+        display: inline;
+    }
+    nav ul{
+        position: absolute;
+        top: 15vh;
+        z-index: 2;
+        background-color: #1E1E1E;
+        display: none;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        width: 185px;
+        padding-bottom: 20px;
+    }
+    nav ul li a{
+        font-size: 40px;
+    }
+    .starterul{
+        margin-top: 0px;
+        padding-top: 0px;
+
+    }
+    #check:checked ~ ul{
+        right: 0.1vw;
+        display: flex;
+    }
+    }
+/* PANTALLA PEQUEÑA */
+@media (max-width: 440px) {
+/* HEADER */
+    header{
+        height: 70px;
+    }
+    .background{
+        height: calc(100vh - 70px);
+    }
+    header img{
+        margin-left: 0px;
+        height: 50px;
+    }
+    .checkbtn{
+        margin-right: 10px;
+        font-size: 50px;
+        line-height: 85px;
+    }
+    nav ul{
+        position: absolute;
+        top: 8vh;
+        z-index: 2;
+        background-color: #1E1E1E;
+        display: none;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        width: 110px;
+        padding-bottom: 20px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    .starterul{
+        margin-top: 10px;
+        padding-top: 0px;
+    }
+    .textlogo{
+        display: none;
+    }
+    }
