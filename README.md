@@ -17,8 +17,20 @@
     </li>
     </ul>
     <hr>
-    <h2>Actualizacion actual de la Pagina: "Anclajes Completos": Version 7</h2>
+    <h2>Actualizacion actual de la Pagina: "Galeria y JS": Version 8</h2>
     
+    🫡Comenzamos a trabajar en el JS de "Contactanos"
+    🫡Solucionamos el bug del menu en galeria
+    🫡Solucionamos bug en el que bricks de Galeria no aparecian y no mostraban el name; ademas ahora no se superponen y tienen menos tiempo de transición
+    🫡Ahora las imagenes de la galeria pueden abrirse y verlas completas al clickear por encima
+    🫥buscar soluciones a la ubicacion de precios
+    😜Proximo: Solucionar Responsive a paginas pequeñas de nuevo Lightbox de "Galeria"
+    😜Proximo: agregar sizes y img/text en Galeria
+
+----------------------------------------------------------------------------------
+    
+    📌Notas de la Version Anterior (Seccion "Anclajes Completos" V.7)
+
     🫡Recordamos para proximos proyectos hacer CSS'S de HEADER y FOOTER separados
     🫡Solucionamos CSS de nuevas paginas
     🫡Agregamos "Nosotros" y "Galeria": lo vinculamos y añadimos header
@@ -26,7 +38,6 @@
     😣Bug encontrado en el que "Galeria" no muestra menu en moviles
     😜Proximo: JS a seccion contactanos
 
-----------------------------------------------------------------------------------
 
     📌Notas de la Version Anterior (Seccion "Pagina Online" V.5)
 
