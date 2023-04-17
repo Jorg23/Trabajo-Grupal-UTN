@@ -170,8 +170,8 @@ nav ul li a:hover{
 }  
   
 .gallery-img:hover{
-    transform: scale(1.2);
-    transition: 4s;
+    transform: scale(1.03);
+    transition: 0.3s;
 }
 
 /* -----------------------RESPONSIVE------------------------------ */
