@@ -41,9 +41,6 @@ header img{
     line-height: 150px;
     padding-left: 15px;
 }
-.logo:hover {
-    transform: scale(1.05);
-}
 nav ul li a{
     font-size: 40px;
     float: right;
@@ -131,6 +128,7 @@ main {
     display: flex;
     justify-content: center;
     font-size: 80px;
+    font-family: VT323;
 }
 .github{
     padding-right: 10%;

@@ -39,7 +39,7 @@
         <span>¡Muchas gracias por tu interés en contactarnos! Por favor, rellena el siguiente formulario <br> y nos pondremos en contacto contigo a través del correo electrónico que nos proporciones :) </span>
         
         <div>
-            <form action="" method="">
+            <form action="" method="" name="contacto">
                 <div class="section_inputs">
                     <label for="name">
                         <input type="text" class="name" name="name" placeholder="Nombre" />
@@ -66,15 +66,16 @@
                     <span>Deseo recibir novedades al email escrito anteriormente.</span>
                 </label>
 
-                <button type="submit" class="submit-btn">Enviar</button>
-
+                <input type="submit" onclick='return enviarFormulario();' value="Enviar">
+                <div class="error">
+                </div>
             </form>
         </div>
         <hr>
     </div>
 
-
-    <script src="js/header.js"></script>
+    <script src="../js/formvalidator.js"></script>
+    <script src="../js/header.js"></script>
         <!-- FOOTER -->
     </div>
         <footer>
