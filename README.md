@@ -1,7 +1,6 @@
   <p>Artxel Bull se presenta como una tienda online para la adquision de arte de pixeles, Pixel Arts o Animaciones de 8 BITS</p>
       </li>
       <li>
-        <u>Prototipos</u> <br>
         <u>Pagina Web En Vivo</u> <br>
         <span>👉</span>
       <a href="https://mateangulo.github.io/Project-Artxel/html/index.html">Click aqui para ir a ARTXEL BULL</a>
