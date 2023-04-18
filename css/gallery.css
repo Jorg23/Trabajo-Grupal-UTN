@@ -100,7 +100,6 @@ nav ul li a:hover {
     grid-auto-rows: 190px;
     padding: 10px;
     grid-gap: 10px;
-    padding-right: 0.61%;
 }
 
 .gallery-item {
@@ -122,6 +121,31 @@ nav ul li a:hover {
     width: 100%;
     margin: 0;
     padding: 10px;
+}
+/* Footer */
+footer{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    color: #1E1E1E;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content:space-between;
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+}
+.bxl-github{
+    font-size: 50px;
+    color: black;
+}
+.ap{
+    height: 50px;
+}
+footer span{
+    line-height: 50px;
+    font-size: 30px;
+}
+.bxl-github:hover{
+    color: red;
 }
 
 @media(min-width:768px) {
@@ -215,9 +239,9 @@ nav ul li a:hover {
 .lightbox-img {
     position: absolute;
     top: 10%;
-    left: 30%;
-    max-width: 90%;
-    min-width: 50%;
+    left: 22%;
+    max-width: 50%;
+    min-width: 60%;
     max-height: 80%;
     min-height: 50%;
     object-fit: contain;
@@ -232,14 +256,14 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
+
 /* -----------------------RESPONSIVE------------------------------ */
 
 /* GRAN TAMAÑO DE SCREEN */
 @media (max-width: 1190px) {
 
     /* HEADER */
-    .checkbtn,
-    .check {
+    .checkbtn, .check {
         display: inline;
     }
 
@@ -278,6 +302,39 @@ nav ul li a:hover {
         max-height: 80%;
         min-height: 50%;
         object-fit: contain;
+    }
+    /* Footer */
+    footer{
+        padding-top: 10px;
+        padding-bottom: 5px;
+        color: #1E1E1E;
+        display: flex;
+        padding-left: 10px;
+        padding-right: 10px;
+        justify-content:space-between;
+        background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+        }
+        .ap{
+        height: 30px;
+        }
+        footer span{
+        line-height: 30px;
+        font-size: 89%;
+        text-align: center;
+        }
+        .bxl-github{
+            font-size: 30px;
+        } 
+        .lightbox-img {
+            position: absolute;
+            top: 10%;
+            left: 20%;
+            max-width: 60%;
+            min-width: 50%;
+            max-height: 80%;
+            min-height: 50%;
+            object-fit: contain;
+        }
     }
 
     /* PANTALLA PEQUEÑA */
@@ -337,5 +394,32 @@ nav ul li a:hover {
             max-height: 80%;
             min-height: 50%;
             object-fit: contain;
+        }
+        /* Footer */
+    footer{
+        padding-top: 10px;
+        padding-bottom: 5px;
+        color: #1E1E1E;
+        display: flex;
+        padding-left: 10px;
+        padding-right: 10px;
+        justify-content:space-between;
+        background-image: linear-gradient(top, #fad0c4 0%, #ffd1ff 100%);
+        }
+        .bxl-github{
+            font-size:30px;
+            }
+        .ap{
+        height: 20px;
+        }
+        footer span{
+        line-height: 20px;
+        font-size: 60%;
+        }
+        footer{
+            padding-top: 0px;
+        }
+        .ap, footer span{
+            padding-top: 5px;
         }
     }

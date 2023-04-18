@@ -5,3 +5,17 @@ window.addEventListener("scroll", function() {
     miCheckbox.checked = false;
   }
 });
+
+// BLOQUEO DE CLICK DERECHO 
+
+const app = document.getElementById('app');
+
+window.onload = function() {
+  document.addEventListener("contextmenu", function(e){
+    e.preventDefault();
+  }, false);
+} 
+
+app.addEventListener('click', () => {
+  alert('click izquierdo')
+});

@@ -11,14 +11,24 @@
         <u>Prototipo</u> <br>
         <span>👉</span>
       <a href="https://www.figma.com/proto/6p2NfObdsUPQq9eLxBWY90/UTN-Wireframe?node-id=0-1&scaling=min-zoom&page-id=0%3A1">Click aqui para ver el Prototipo WEB en Figma</a>
-      <br>
-      <span>👉</span>
-      <a href="https://github.com/Jorg23/Trabajo-Grupal-UTN"> <del>Click aqui para ver el Prototipo MOVIL en Figma</del></a> <span><u>NO DISPONIBLE</u></span>
     </li>
     </ul>
     <hr>
-    <h2>Actualizacion actual de la Pagina: "Galeria y JS": Version 8</h2>
+    <h2>Actualizacion actual de la Pagina: "Ajustes": Version 8.2</h2>
     
+    🫡Todas las pantallas pueden visualizar correctamente el Lightbox de "Galeria"
+    🫡Deshabilitamos el click derecho desde header.js
+    🫡Agregamos Footer a "Galeria" (ahora todas las secciones cuentan con estos excepto "Nosotros" que cuentan con un footer diferente adrede)
+    🫡Comenzamos a agregar sizes y textos en Galeria
+    🫡Solucionamos la posicion del footer de "Contacto"
+    😣Bug encontrado en el que algun elemento en la seccion "Galeria" ocupa + que max width
+    😜Proximo: agregar precios a Productos Destacados en "Inicio" (al fin)
+    😜Proximo: Lightbox muestree con galeria.js tambien el nombre del producto
+
+----------------------------------------------------------------------------------
+    
+    📌Notas de la Version Anterior (Seccion "Galeria y JS" V.8)
+
     🫡Comenzamos a trabajar en el JS de "Contactanos"
     🫡Solucionamos el bug del menu en galeria
     🫡Solucionamos bug en el que bricks de Galeria no aparecian y no mostraban el name; ademas ahora no se superponen y tienen menos tiempo de transición
@@ -27,8 +37,7 @@
     😜Proximo: Solucionar Responsive a paginas pequeñas de nuevo Lightbox de "Galeria"
     😜Proximo: agregar sizes y img/text en Galeria
 
-----------------------------------------------------------------------------------
-    
+
     📌Notas de la Version Anterior (Seccion "Anclajes Completos" V.7)
 
     🫡Recordamos para proximos proyectos hacer CSS'S de HEADER y FOOTER separados
