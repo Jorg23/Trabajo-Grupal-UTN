@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fjalla+One&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: antiquewhite;
+    margin: 0;
+    font-family: VT323;
+}
+
+h1 {
+    color: #444;
+    text-align: center;
+    font-size: 50px;
+}
+
+* {
+    font-family: VT323;
+    padding: 0;
+    margin: 0;
+}
+
+/* HEADER */
+header {
+    background-color: #1E1E1E;
+    width: 100%;
+    height: 140px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+    clear: both;
+    display: flex;
+
+    justify-content: space-between;
+}
+
+header img {
+    padding-top: 10px;
+    padding-left: 20px;
+    height: 120px;
+}
+
+.textlogo {
+    color: white;
+    font-family: 'Anton', sans-serif;
+    position: absolute;
+    font-size: 5vw;
+    line-height: 150px;
+    padding-left: 15px;
+}
+
+nav ul li a {
+    font-size: 40px;
+    float: right;
+    margin-right: 3vh;
+    cursor: pointer;
+    color: whitesmoke;
+    transition: text-shadow 0.2s ease-in-out;
+}
+
+nav ul li {
+    position: relative;
+    padding-top: 50px;
+    list-style: none;
+    margin-left: calc(8vw - 50px);
+    float: right;
+}
+
+nav ul li a:hover {
+    color: hotpink;
+    text-shadow: 0 0 50px hotpink;
+    text-decoration: dashed;
+}
+
+#check,
+.checkbtn {
+    display: none;
+    color: white;
+    float: right;
+    font-size: 70px;
+    line-height: 160px;
+    cursor: pointer;
+}
+
+.checkbtn:hover {
+    color: hotpink;
+    text-shadow: 0 0 15px hotpink;
+}
+
+
+
+/*estilo de la galeria*/
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 190px;
+    padding: 10px;
+    grid-gap: 10px;
+}
+
+.gallery-item {
+    position: relative;
+
+}
+
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-title {
+    position: absolute;
+    bottom: 0;
+    color: azure;
+
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+}
+/* Footer */
+footer{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    color: #1E1E1E;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content:space-between;
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+}
+.bxl-github{
+    font-size: 50px;
+    color: black;
+}
+.ap{
+    height: 50px;
+}
+footer span{
+    line-height: 50px;
+    font-size: 30px;
+}
+.bxl-github:hover{
+    color: red;
+}
+
+@media(min-width:768px) {
+
+    .gallery-container {
+
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .gallery-item:nth-child(3) {
+        grid-column-start: span 2;
+    }
+
+    .gallery-item:nth-child(4) {
+        grid-column-start: span 3;
+    }
+
+    .gallery-item:nth-child(5) {
+        grid-row-start: span 3;
+    }
+
+    .gallery-item:nth-child(9) {
+        grid-column-start: span 3;
+    }
+
+    .gallery-item:nth-child(9) {
+        grid-column-start: span 3;
+    }
+}
+
+/*tamaño de computadora*/
+
+@media (min-width:1024) {
+    .gallery-container {
+
+        grid-template-columns: repeat(4, 1fr);
+        width: 90%;
+        margin: auto;
+    }
+
+    .gallery-item:nth-child(1) {
+        grid-column-start: span 2;
+        grid-row-start: span 2;
+    }
+
+    .gallery-item:nth-child(4) {
+        grid-column-start: span 3;
+        grid-row-start: span 3;
+    }
+
+    .gallery-item:nth-child(7) {
+        grid-column-start: span 3;
+        grid-row-start: span 3;
+    }
+
+    .gallery-item:nth-child(5) {
+        grid-column-start: span 3;
+        grid-row-start: span 3;
+    }
+
+    .gallery-item:nth-child(8) {
+        grid-column-start: span 3;
+        grid-row-start: span 3;
+    }
+
+}
+
+.gallery-container img:hover {
+    transition: 0.3s;
+    transform: scale(1.03);
+    cursor: pointer;
+
+}
+
+.gallery-item {
+    border: 8px solid #faebd7;
+}
+
+/* Oculta la lightbox al principio */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.lightbox-img {
+    position: absolute;
+    top: 10%;
+    left: 22%;
+    max-width: 50%;
+    min-width: 60%;
+    max-height: 80%;
+    min-height: 50%;
+    object-fit: contain;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* -----------------------RESPONSIVE------------------------------ */
+
+/* GRAN TAMAÑO DE SCREEN */
+@media (max-width: 1190px) {
+
+    /* HEADER */
+    .checkbtn, .check {
+        display: inline;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 15vh;
+        z-index: 2;
+        background-color: #1E1E1E;
+        display: none;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        width: 185px;
+        padding-bottom: 20px;
+    }
+
+    nav ul li a {
+        font-size: 40px;
+    }
+
+    .starterul {
+        margin-top: 0px;
+        padding-top: 0px;
+
+    }
+
+    #check:checked~ul {
+        right: 0.1vw;
+        display: flex;  
+    }
+    .lightbox-img {
+        position: absolute;
+        top: 10%;
+        left: 30%;
+        max-width: 90%;
+        min-width: 50%;
+        max-height: 80%;
+        min-height: 50%;
+        object-fit: contain;
+    }
+    /* Footer */
+    footer{
+        padding-top: 10px;
+        padding-bottom: 5px;
+        color: #1E1E1E;
+        display: flex;
+        padding-left: 10px;
+        padding-right: 10px;
+        justify-content:space-between;
+        background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+        }
+        .ap{
+        height: 30px;
+        }
+        footer span{
+        line-height: 30px;
+        font-size: 89%;
+        text-align: center;
+        }
+        .bxl-github{
+            font-size: 30px;
+        } 
+        .lightbox-img {
+            position: absolute;
+            top: 10%;
+            left: 20%;
+            max-width: 60%;
+            min-width: 50%;
+            max-height: 80%;
+            min-height: 50%;
+            object-fit: contain;
+        }
+    }
+
+    /* PANTALLA PEQUEÑA */
+    @media (max-width: 440px) {
+
+        /* HEADER */
+        header {
+            height: 70px;
+        }
+
+        .background {
+            height: calc(100vh - 70px);
+        }
+
+        header img {
+            margin-left: 0px;
+            height: 50px;
+        }
+
+        .checkbtn {
+            margin-right: 10px;
+            font-size: 50px;
+            line-height: 85px;
+        }
+
+        nav ul {
+            position: absolute;
+            top: 8vh;
+            z-index: 2;
+            background-color: #1E1E1E;
+            display: none;
+            flex-direction: column-reverse;
+            align-items: flex-end;
+            width: 110px;
+            padding-bottom: 20px;
+        }
+
+        nav ul li a {
+            font-size: 20px;
+        }
+
+        .starterul {
+            margin-top: 10px;
+            padding-top: 0px;
+        }
+
+        .textlogo {
+            display: none;
+        }
+
+        .lightbox-img {
+            position: absolute;
+            top: 30%;
+            left: 5%;
+            max-width: 90%;
+            min-width: 50%;
+            max-height: 80%;
+            min-height: 50%;
+            object-fit: contain;
+        }
+        /* Footer */
+    footer{
+        padding-top: 10px;
+        padding-bottom: 5px;
+        color: #1E1E1E;
+        display: flex;
+        padding-left: 10px;
+        padding-right: 10px;
+        justify-content:space-between;
+        background-image: linear-gradient(top, #fad0c4 0%, #ffd1ff 100%);
+        }
+        .bxl-github{
+            font-size:30px;
+            }
+        .ap{
+        height: 20px;
+        }
+        footer span{
+        line-height: 20px;
+        font-size: 60%;
+        }
+        footer{
+            padding-top: 0px;
+        }
+        .ap, footer span{
+            padding-top: 5px;
+        }
+    }

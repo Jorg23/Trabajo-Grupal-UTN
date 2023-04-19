@@ -23,7 +23,7 @@
     😜Proximo: Lightbox muestree con galeria.js tambien el nombre del producto
 
 ----------------------------------------------------------------------------------
-    📌Notas de la Version Anterior (Seccion "Ajustes" V.8.2)
+    📌Notas de la Version Anterior (Seccion "Ajustes" V.8)
 
     🫡Todas las pantallas pueden visualizar correctamente el Lightbox de "Galeria"
     🫡Deshabilitamos el click derecho desde header.js
