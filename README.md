@@ -7,7 +7,7 @@
       <br>
     </li>
           <li>
-          <u>Prototipo de la pagina en FIGMA</u>
+          <u>Prototipo de la pagina en FIGMA</u> <br>
         <span>👉</span>
       <a href="https://www.figma.com/proto/6p2NfObdsUPQq9eLxBWY90/UTN-Wireframe?node-id=0-1&scaling=min-zoom&page-id=0%3A1">Click aqui para ver el Prototipo WEB en Figma</a>
     </li>
