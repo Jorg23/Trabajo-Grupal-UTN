@@ -7,14 +7,24 @@
       <br>
     </li>
           <li>
-        <u>Prototipo</u> <br>
         <span>👉</span>
       <a href="https://www.figma.com/proto/6p2NfObdsUPQq9eLxBWY90/UTN-Wireframe?node-id=0-1&scaling=min-zoom&page-id=0%3A1">Click aqui para ver el Prototipo WEB en Figma</a>
     </li>
     </ul>
     <hr>
-    <h2>Actualizacion actual de la Pagina: "Ajustes": Version 8.2</h2>
+    <h2>Actualizacion actual de la Pagina: "Mejoras Recomendadas": Version 9.1</h2>
     
+    🫡Reorganizamos por segunda vez las carpetas del proyecto para mejorar la distribucion segun las recomendaciones de profesores (Obviamos las carpetas de Includes, admin y lib al no utilizarlas o no poder optimizar el proyecto para requerir actualmente de estas)
+    🫡La Validacion del Formulario de "Contactos" ya es completamente funcional (detecta que el campo de comentarios tenga contenido, que el mail sea correcto y pone a name y lastname como obligatorio)
+    🫡Los Headers y Footer ya se encuentran en todas las secciones (excepto "Nosotros" que cuentan con un footer diferente lo cual esta hecho adrede)
+    🫡El Footer de "Contactanos" ya se escuentra en la posicion deseada
+    😣Bug encontrado en el que algun elemento en la seccion "Galeria" ocupa + que max width
+    😜Proximo: agregar precios a Productos Destacados en "Inicio" (al fin)
+    😜Proximo: Lightbox muestree con galeria.js tambien el nombre del producto
+
+----------------------------------------------------------------------------------
+    📌Notas de la Version Anterior (Seccion "Ajustes" V.8.2)
+
     🫡Todas las pantallas pueden visualizar correctamente el Lightbox de "Galeria"
     🫡Deshabilitamos el click derecho desde header.js
     🫡Agregamos Footer a "Galeria" (ahora todas las secciones cuentan con estos excepto "Nosotros" que cuentan con un footer diferente adrede)
@@ -24,8 +34,7 @@
     😜Proximo: agregar precios a Productos Destacados en "Inicio" (al fin)
     😜Proximo: Lightbox muestree con galeria.js tambien el nombre del producto
 
-----------------------------------------------------------------------------------
-    
+
     📌Notas de la Version Anterior (Seccion "Galeria y JS" V.8)
 
     🫡Comenzamos a trabajar en el JS de "Contactanos"

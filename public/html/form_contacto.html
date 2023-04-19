@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="../css/form_contacto.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>    
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
@@ -14,7 +16,7 @@
     <header>
         <div class="logo">
             <a href="index.html">
-         <img src="../img/logo.png" alt="logo">
+         <img src="../assets/logo.png" alt="logo">
          <span class="textlogo">ARTXEL BULL</span>
             </a>
         </div>
@@ -27,7 +29,7 @@
              <li><a href="form_contacto.html">Contacto</a></li>
              <li><a href="nosotros.html">Nosotros</a></li>
              <li><a href="galeria.html">Galeria</a></li>
-             <li class="starterul"><a href="index.html">Inicio</a></li>
+             <li class="starterul"><a href="../index.html">Inicio</a></li>
          </ul>
         </nav>
     </header>
@@ -66,17 +68,18 @@
                     <span>Deseo recibir novedades al email escrito anteriormente.</span>
                 </label>
 
-                <input type="submit" onclick='return enviarFormulario();' value="Enviar">
-                <div class="error">
+                <input type="submit" onclick="enviarFormulario();" value="Enviar">
+                <label for="comentarios" class="comentarios-label">
+               <div class="error-comentarios"></div>
                     
                 </div>
             </form>
         </div>
-        <hr>
     </div>
 
-    <script src="../js/formvalidator.js"></script>
+
     <script src="../js/header.js"></script>
+    <script src="../js/formvalidator.js"></script>
         <!-- FOOTER -->
     </div>
         <footer>
