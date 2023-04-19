@@ -255,6 +255,21 @@ footer span{
     color: white;
     cursor: pointer;
 }
+.popup {
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    height: 60px;
+    border-top-right-radius: 30px;
+    width: 400px;
+    font-size: 200%;
+  }
+  error {
+    color: red;
+  }
 
 
 /* -----------------------RESPONSIVE------------------------------ */

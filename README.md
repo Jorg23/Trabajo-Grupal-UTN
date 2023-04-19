@@ -17,7 +17,6 @@
     🫡Reorganizamos por segunda vez las carpetas del proyecto para mejorar la distribucion segun las recomendaciones de profesores (Obviamos las carpetas de Includes, admin y lib al no utilizarlas o no poder optimizar el proyecto para requerir actualmente de estas)
     🫡La Validacion del Formulario de "Contactos" ya es completamente funcional (detecta que el campo de comentarios tenga contenido, que el mail sea correcto y pone a name y lastname como obligatorio)
     🫡Los Headers y Footer ya se encuentran en todas las secciones (excepto "Nosotros" que cuentan con un footer diferente lo cual esta hecho adrede)
-    🫡El Footer de "Contactanos" ya se escuentra en la posicion deseada
     😣Bug encontrado en el que algun elemento en la seccion "Galeria" ocupa + que max width
     😜Proximo: agregar precios a Productos Destacados en "Inicio" (al fin)
     😜Proximo: Lightbox muestree con galeria.js tambien el nombre del producto
