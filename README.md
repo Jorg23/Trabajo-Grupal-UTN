@@ -3,10 +3,11 @@
       <li>
         <u>Pagina Web En Vivo</u> <br>
         <span>👉</span>
-      <a href="https://mateangulo.github.io/Project-Artxel/html/index.html">Click aqui para ir a ARTXEL BULL</a>
+      <a href="https://mateangulo.github.io/Project-Artxel/public/index.html">Click aqui para ir a ARTXEL BULL</a>
       <br>
     </li>
           <li>
+          <u>Prototipo de la pagina en FIGMA</u>
         <span>👉</span>
       <a href="https://www.figma.com/proto/6p2NfObdsUPQq9eLxBWY90/UTN-Wireframe?node-id=0-1&scaling=min-zoom&page-id=0%3A1">Click aqui para ver el Prototipo WEB en Figma</a>
     </li>
@@ -15,7 +16,7 @@
     <h2>Actualizacion actual de la Pagina: "Mejoras Recomendadas": Version 9.1</h2>
     
     🫡Reorganizamos por segunda vez las carpetas del proyecto para mejorar la distribucion segun las recomendaciones de profesores (Obviamos las carpetas de Includes, admin y lib al no utilizarlas o no poder optimizar el proyecto para requerir actualmente de estas)
-    🫡La Validacion del Formulario de "Contactos" ya es completamente funcional (detecta que el campo de comentarios tenga contenido, que el mail sea correcto y pone a name y lastname como obligatorio)
+    🫡La Validacion del Formulario de "Contactos" ya es completamente funcional (detecta que el campo de comentarios tenga contenido, que el mail sea correcto y pone a name y lastname como obligatorio; tambien confirma cuando todo es correcto y el formulario fue enviado antes de reestablecerlo (2seg.))
     🫡Los Headers y Footer ya se encuentran en todas las secciones (excepto "Nosotros" que cuentan con un footer diferente lo cual esta hecho adrede)
     😣Bug encontrado en el que algun elemento en la seccion "Galeria" ocupa + que max width
     😜Proximo: agregar precios a Productos Destacados en "Inicio" (al fin)

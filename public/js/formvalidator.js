@@ -16,41 +16,29 @@ $("form[name='contacto']").validate({
   },
   messages: {
     name: {
-      required: "Por favor, ingrese su nombre"
+      required: "<font color='red'>Por favor, ingrese su nombre"
     },
     lastname: {
-      required: "Por favor, ingrese su apellido"
+      required: "<font color='red'>Por favor, ingrese su apellido"
     },
     email: {
-      required: "Por favor, ingrese su dirección de correo electrónico",
-      email: "Por favor, ingrese una dirección de correo electrónico válida"
+      required: "<font color='red'>Por favor, ingrese su dirección de correo electrónico",
+      email: "<font color='red'>Por favor, ingrese una dirección de correo electrónico válida"
     },
     comentarios: {
-      required: "Por favor, ingrese un comentario para que podamos recibir este formulario"
+      required: "<font color='red'>Por favor, ingrese un comentario para que podamos recibir este formulario"
     },
-    
   },
   submitHandler: function(form) {
-    // envía los datos del formulario a través de AJAX
-    $.ajax({
-      type: "POST",
-      url: "../send.php", // reemplace con la URL de su propio archivo PHP
-      data: $(form).serialize(),
-      success: function(response) {
-        // procesa la respuesta del servidor
-        if (response === "success") {
-          // muestra un mensaje de confirmación si el formulario se envió correctamente
-          alert("El formulario se envió correctamente. Nos pondremos en contacto contigo lo antes posible.");
-        } else {
-          // muestra un mensaje de error si se produjo un error al enviar el formulario
-          alert("Se produjo un error al enviar el formulario. Por favor, inténtelo de nuevo más tarde.");
-        }
-      },
-      error: function(xhr, textStatus, errorThrown) {
-        // muestra un mensaje de error si se produjo un error en la solicitud AJAX
-        alert("Se produjo un error en la solicitud AJAX. Por favor, inténtelo de nuevo más tarde.");
-      }
-    });
+    // muestra la confirmación en verde si se envió correctamente
+    $("#mensaje-confirmacion").text("El formulario se envió correctamente").css("color", "green");
+
+        // resetea el formulario después de 1 segundo
+        setTimeout(function() {
+          form.reset();
+          $("#mensaje-confirmacion").removeClass("text-danger").text("");
+        }, 2000);
+
+        return false; // evita que se envíe el formulario de manera predeterminada
   }
 });
-
